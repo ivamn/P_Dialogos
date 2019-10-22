@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         bIniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                 LayoutInflater inflater = MainActivity.this.getLayoutInflater();
                 View dialogView = inflater.inflate(R.layout.alta_usuario, null);
                 builder.setView(dialogView);
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 bCrear.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Toast.makeText(getApplicationContext(), "Se creará la cuenta", Toast.LENGTH_LONG);
+                        Toast.makeText(getApplicationContext(), "Se creará la cuenta", Toast.LENGTH_LONG).show();
                     }
                 });
 
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 bEntrar.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Toast.makeText(getApplicationContext(), "Se iniciará la aplicación", Toast.LENGTH_LONG);
+                        Toast.makeText(getApplicationContext(), "Se iniciará la aplicación", Toast.LENGTH_LONG).show();
                     }
                 });
                 builder.show();
