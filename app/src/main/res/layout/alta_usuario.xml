@@ -37,7 +37,9 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
-        android:hint="Nombre" />
+        android:hint="Nombre"
+        android:background="@drawable/bordes_style"
+        android:paddingLeft="16dp"/>
 
     <EditText
         style="@style/Widget.AppCompat.AutoCompleteTextView"
@@ -46,7 +48,9 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
-        android:hint="Contraseña" />
+        android:hint="Contraseña"
+        android:background="@drawable/bordes_style"
+        android:paddingLeft="16dp"/>
 
     <CheckBox
         android:layout_marginTop="8dp"
